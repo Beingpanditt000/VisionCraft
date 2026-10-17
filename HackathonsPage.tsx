@@ -16,7 +16,56 @@ import {
   Clock,
   Sparkles,
   Info
+} from 'lucide-react';
+import { Hackathon, HackathonStatus } from '../types/hackathon';
+import { SAMPLE_HACKATHONS } from '../data/sampleHackathons';
 
+interface HackathonsPageProps {
+  initialSelectedId?: string | null;
+  onSelectHackathon?: (id: string | null) => void;
+}
+
+export const HackathonsPage: React.FC<HackathonsPageProps> = ({ 
+  initialSelectedId = null,
+  onSelectHackathon
+}) => {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedStatus, setSelectedStatus] = useState<string>('all');
+  const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [sortBy, setSortBy] = useState<'prizes' | 'participants' | 'soonest'>('prizes');
+  const [activeModalHackathon, setActiveModalHackathon] = useState<Hackathon | null>(() => {
+    if (initialSelectedId) {
+      return SAMPLE_HACKATHONS.find(h => h.id === initialSelectedId) || null;
+    }
+    return null;
+  });
+  const [registeredIds, setRegisteredIds] = useState<Record<string, boolean>>({});
+
+  const categories = [
+    'All Categories',
+    'AI & Machine Learning',
+    'Web3 & Crypto',
+    'HealthTech',
+    'Climate & IoT',
+    'CyberSecurity',
+    'Open Innovation'
+  ];
+
+  const statusFilters = [
+    { id: 'all', label: 'All Events' },
+    { id: 'live', label: 'Live Now', badgeColor: 'bg-emerald-500/20 text-emerald-300' },
+    { id: 'registration_open', label: 'Registration Open', badgeColor: 'bg-violet-500/20 text-violet-300' },
+    { id: 'upcoming', label: 'Upcoming', badgeColor: 'bg-indigo-500/20 text-indigo-300' },
+  ];
+
+  // Filtered & Sorted Hackathons
+  const filteredHackathons = useMemo(() => {
+    return SAMPLE_HACKATHONS.filter(hackathon => {
+      // Search matching
+      const matchesSearch = 
+        hackathon.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        hackathon.tagline.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        hackathon.tags.some(t => t.toLowerCase().includes(searchQuery.toLowerCase()));
 
       // Status matching
       const matchesStatus = selectedStatus === 'all' || hackathon.status === selectedStatus;
