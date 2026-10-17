@@ -1,6 +1,18 @@
 import React, { useState } from 'react';
 import { 
-  
+ Trophy, 
+  Users, 
+  ExternalLink, 
+  Calendar, 
+  CheckCircle, 
+  Clock, 
+  FileCode, 
+  Sparkles, 
+  Send,
+  AlertCircle,
+  Copy,
+  Check,
+  GitBranch 
 } from 'lucide-react';
 import { PageView } from '../types/hackathon';
 
