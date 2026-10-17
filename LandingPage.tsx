@@ -1,6 +1,8 @@
 import React from 'react';
 import { 
-  
+  Rocket, 
+  Trophy, 
+  Users,
   Sparkles, 
   Globe, 
   ArrowRight, 
