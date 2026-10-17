@@ -1,6 +1,21 @@
 import React, { useState } from 'react';
 import { 
-  
+ LayoutDashboard, 
+  Plus, 
+  FileDown, 
+  Users, 
+  Trophy, 
+  Clock, 
+  CheckCircle2, 
+  AlertCircle, 
+  ChevronRight, 
+  Search, 
+  Settings, 
+  Sliders, 
+  Sparkles,
+  BarChart3,
+  Check,
+  Eye 
 } from 'lucide-react';
 import { PageView } from '../types/hackathon';
 
