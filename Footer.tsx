@@ -1,4 +1,4 @@
-
+import {
 import { Rocket, ShieldCheck, Heart, MessageSquare, Share2, Globe } from 'lucide-react';
 import { PageView } from '../types/hackathon';
 
