@@ -1,0 +1,328 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e15] [cursor=pointer]:
+        - generic [ref=e16]: HackOrbit
+        - generic [ref=e17]: AI Hackathon Platform
+      - button "Toggle menu" [ref=e785] [cursor=pointer]
+  - main [ref=e28]:
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]: The Next-Generation AI Hackathon Ecosystem
+        - heading "Build. Collaborate. Innovate." [level=1] [ref=e35]:
+          - text: Build. Collaborate.
+          - generic [ref=e36]: Innovate.
+        - paragraph [ref=e37]: HackOrbit is the premier AI-driven hackathon platform. Match with high-synergy teams, automate complex event planning, and submit to fair, transparent rubric-based evaluation.
+        - generic [ref=e38]:
+          - button "Explore Hackathons" [ref=e39] [cursor=pointer]
+          - button "Organizer Suite" [ref=e43] [cursor=pointer]
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: $3.2M+
+            - generic [ref=e50]: Total Prizes Awarded
+          - generic [ref=e51]:
+            - generic [ref=e52]: 42,000+
+            - generic [ref=e53]: Global Builders
+          - generic [ref=e54]:
+            - generic [ref=e55]: 185+
+            - generic [ref=e56]: Hackathons Hosted
+          - generic [ref=e57]:
+            - generic [ref=e58]: 99.4%
+            - generic [ref=e59]: Team Match Score
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic [ref=e62]: hackorbit.io/live-arena
+          - generic [ref=e67]: LIVE MATCHMAKING ACTIVE
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]:
+              - generic [ref=e73]: "Smart Match: Team VectorVortex"
+              - generic [ref=e81]: 98% Synergy
+            - generic [ref=e82]:
+              - generic [ref=e83]:
+                - generic [ref=e84]: ML & Prompt Engineer
+                - generic [ref=e85]: Alex R. (PyTorch, LangChain)
+              - generic [ref=e86]:
+                - generic [ref=e87]: Frontend Architect
+                - generic [ref=e88]: Sarah K. (React 19, Three.js)
+              - generic [ref=e89]:
+                - generic [ref=e90]: Systems & Cloud Backend
+                - generic [ref=e91]: Devon M. (Go, Kubernetes)
+              - generic [ref=e92]:
+                - generic [ref=e93]: "Role Open: UI/UX & Product Design"
+                - generic [ref=e94] [cursor=pointer]: 1-Click Invite
+          - generic [ref=e95]:
+            - generic [ref=e96]:
+              - generic [ref=e97]: Evaluation Rubric Breakdown
+              - generic [ref=e103]: Blinded Review
+            - generic [ref=e104]:
+              - generic [ref=e106]:
+                - generic [ref=e107]: Technical Architecture & Depth
+                - generic [ref=e108]: 9.7 / 10
+              - generic [ref=e112]:
+                - generic [ref=e113]: Autonomous Innovation & Impact
+                - generic [ref=e114]: 9.5 / 10
+              - generic [ref=e117]:
+                - generic [ref=e118]: ✓ Code Authenticity
+                - generic [ref=e119]: ✓ Multi-Judge Consensus
+    - generic [ref=e121]:
+      - generic [ref=e122]:
+        - generic [ref=e123]: Core Capabilities
+        - heading "Designed for World-Class Hackathon Execution" [level=2] [ref=e124]
+        - paragraph [ref=e125]: Empower organizers to launch flawless events while giving builders the intelligent tools to form dream teams and get fairly evaluated.
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - generic [ref=e128]: AI Operations
+          - heading "Smart Event Planning" [level=3] [ref=e134]
+          - generic [ref=e135]: Autonomous Operational Co-pilot
+          - paragraph [ref=e136]: Transform chaotic hackathon preparation into an automated, synchronized experience. Generate schedule milestones, adaptive challenge briefs, and logistics tracking in seconds.
+          - generic [ref=e137]:
+            - generic [ref=e138]: Automated timeline schedules & real-time milestone alerts
+            - generic [ref=e144]: Adaptive challenge generator aligned with sponsor goals
+            - generic [ref=e150]: Live mentor queue management & check-in ticketing
+        - generic [ref=e156]:
+          - generic [ref=e157]: Talent Synergy
+          - heading "Skill-Based Team Formation" [level=3] [ref=e165]
+          - generic [ref=e166]: Complementary Matchmaking Engine
+          - paragraph [ref=e167]: Eliminate awkward Discord matchmaking. HackOrbit balances frontend engineers, ML specialists, UI designers, and product architects with precision algorithm matching.
+          - generic [ref=e168]:
+            - generic [ref=e169]: GitHub & tech-stack synergy scoring (Python, React, PyTorch)
+            - generic [ref=e175]: Timezone, commitment level, and work-style alignment
+            - generic [ref=e181]: One-click squad invites with role vacancy indicators
+        - generic [ref=e187]:
+          - generic [ref=e188]: Unbiased Judging
+          - heading "Transparent Project Evaluation" [level=3] [ref=e194]
+          - generic [ref=e195]: Fair, Verifiable Multi-Criteria Rubrics
+          - paragraph [ref=e196]: Build participant trust with bias-resistant, multi-dimensional judging rubrics. Combine automated code repository health metrics with blinded qualitative reviews.
+          - generic [ref=e197]:
+            - generic [ref=e198]: "Multi-tiered criteria: Innovation, Technical Depth & Usability"
+            - generic [ref=e204]: Automated repository checks, commit cadence & authenticity
+            - generic [ref=e210]: Detailed, constructive judge feedback dispatched to every team
+    - generic [ref=e217]:
+      - generic [ref=e218]:
+        - generic [ref=e219]: Active Arenas
+        - heading "Explore Upcoming Hackathons" [level=2] [ref=e225]
+        - paragraph [ref=e226]: Find your next high-impact challenge, claim cash bounties, and assemble your dream team on HackOrbit.
+      - generic [ref=e227]:
+        - textbox "Search hackathons by keyword, tech stack, or host..." [ref=e233]
+        - generic [ref=e234]:
+          - button "All Categories" [ref=e235] [cursor=pointer]
+          - button "AI & ML" [ref=e236] [cursor=pointer]
+          - button "Web3 & Cloud" [ref=e237] [cursor=pointer]
+          - button "FinTech" [ref=e238] [cursor=pointer]
+          - button "Climate Tech" [ref=e239] [cursor=pointer]
+          - button "Open Innovation" [ref=e240] [cursor=pointer]
+      - generic [ref=e242]:
+        - text: Showing
+        - strong [ref=e243]: "6"
+        - text: upcoming events
+      - generic [ref=e244]:
+        - generic [ref=e247]:
+          - generic [ref=e248]:
+            - generic [ref=e249]:
+              - generic [ref=e250]: Registration Open
+              - generic [ref=e252]: FEATURED
+            - generic [ref=e255]: AI & ML
+          - heading "NeuroForge Global AI Challenge" [level=3] [ref=e256]
+          - paragraph [ref=e257]: Architect autonomous agent swarms and multimodal intelligence models.
+          - generic [ref=e258]:
+            - text: Hosted by
+            - strong [ref=e259]: OpenAgent Labs & Anthropic Alliance
+          - generic [ref=e260]:
+            - generic [ref=e268]:
+              - generic [ref=e269]: Prize Pool
+              - generic [ref=e270]: $75,000
+            - generic [ref=e275]:
+              - generic [ref=e276]: Timeline
+              - generic [ref=e277]: 18 days left
+            - generic [ref=e285]:
+              - generic [ref=e286]: Hackers
+              - generic [ref=e287]: 1240 registered
+            - generic [ref=e293]:
+              - generic [ref=e294]: Format
+              - generic [ref=e295]: Virtual
+          - generic [ref=e296]:
+            - generic [ref=e297]: "#Agents"
+            - generic [ref=e298]: "#LLMs"
+            - generic [ref=e299]: "#Computer Vision"
+            - generic [ref=e300]: "#PyTorch"
+          - button "View Details & Tracks" [ref=e301] [cursor=pointer]
+        - generic [ref=e307]:
+          - generic [ref=e308]:
+            - generic [ref=e309]:
+              - generic [ref=e310]: Registration Open
+              - generic [ref=e312]: FEATURED
+            - generic [ref=e315]: Web3 & Cloud
+          - heading "OrbitSync CloudMesh Hackathon" [level=3] [ref=e316]
+          - paragraph [ref=e317]: Decentralized edge compute and high-concurrency microservices.
+          - generic [ref=e318]:
+            - text: Hosted by
+            - strong [ref=e319]: Distributed Computing Foundation
+          - generic [ref=e320]:
+            - generic [ref=e328]:
+              - generic [ref=e329]: Prize Pool
+              - generic [ref=e330]: $50,000
+            - generic [ref=e335]:
+              - generic [ref=e336]: Timeline
+              - generic [ref=e337]: 26 days left
+            - generic [ref=e345]:
+              - generic [ref=e346]: Hackers
+              - generic [ref=e347]: 820 registered
+            - generic [ref=e353]:
+              - generic [ref=e354]: Format
+              - generic [ref=e355]: Hybrid
+          - generic [ref=e356]:
+            - generic [ref=e357]: "#Distributed Systems"
+            - generic [ref=e358]: "#Rust"
+            - generic [ref=e359]: "#Kubernetes"
+            - generic [ref=e360]: "#Edge AI"
+          - button "View Details & Tracks" [ref=e361] [cursor=pointer]
+        - generic [ref=e367]:
+          - generic [ref=e368]:
+            - generic [ref=e369]: Registration Open
+            - generic [ref=e372]: AI & ML
+          - heading "BioNova HealthTech Sprint" [level=3] [ref=e373]
+          - paragraph [ref=e374]: Generative biology, clinical decision support, and patient telemetry.
+          - generic [ref=e375]:
+            - text: Hosted by
+            - strong [ref=e376]: MedTech Ventures & BioOrbit
+          - generic [ref=e377]:
+            - generic [ref=e385]:
+              - generic [ref=e386]: Prize Pool
+              - generic [ref=e387]: $45,000
+            - generic [ref=e392]:
+              - generic [ref=e393]: Timeline
+              - generic [ref=e394]: 38 days left
+            - generic [ref=e402]:
+              - generic [ref=e403]: Hackers
+              - generic [ref=e404]: 670 registered
+            - generic [ref=e410]:
+              - generic [ref=e411]: Format
+              - generic [ref=e412]: Virtual
+          - generic [ref=e413]:
+            - generic [ref=e414]: "#Bioinformatics"
+            - generic [ref=e415]: "#Python"
+            - generic [ref=e416]: "#Healthcare"
+            - generic [ref=e417]: "#Predictive ML"
+          - button "View Details & Tracks" [ref=e418] [cursor=pointer]
+        - generic [ref=e424]:
+          - generic [ref=e425]:
+            - generic [ref=e426]:
+              - generic [ref=e427]: Starting Soon
+              - generic [ref=e429]: FEATURED
+            - generic [ref=e432]: FinTech
+          - heading "FinVision Quant AI Summit" [level=3] [ref=e433]
+          - paragraph [ref=e434]: Algorithmic market intelligence, fraud prediction, and synthetic assets.
+          - generic [ref=e435]:
+            - text: Hosted by
+            - strong [ref=e436]: Apex Capital & Global FinLabs
+          - generic [ref=e437]:
+            - generic [ref=e445]:
+              - generic [ref=e446]: Prize Pool
+              - generic [ref=e447]: $60,000
+            - generic [ref=e452]:
+              - generic [ref=e453]: Timeline
+              - generic [ref=e454]: 46 days left
+            - generic [ref=e462]:
+              - generic [ref=e463]: Hackers
+              - generic [ref=e464]: 910 registered
+            - generic [ref=e470]:
+              - generic [ref=e471]: Format
+              - generic [ref=e472]: Hybrid
+          - generic [ref=e473]:
+            - generic [ref=e474]: "#FinTech"
+            - generic [ref=e475]: "#High-Frequency"
+            - generic [ref=e476]: "#Deep Learning"
+            - generic [ref=e477]: "#Security"
+          - button "View Details & Tracks" [ref=e478] [cursor=pointer]
+        - generic [ref=e484]:
+          - generic [ref=e485]:
+            - generic [ref=e486]: Starting Soon
+            - generic [ref=e489]: Climate Tech
+          - heading "ZeroCarbon Intelligence Challenge" [level=3] [ref=e490]
+          - paragraph [ref=e491]: Harness predictive climate modeling and smart electrical grid optimization.
+          - generic [ref=e492]:
+            - text: Hosted by
+            - strong [ref=e493]: TerraNova Climate Trust
+          - generic [ref=e494]:
+            - generic [ref=e502]:
+              - generic [ref=e503]: Prize Pool
+              - generic [ref=e504]: $40,000
+            - generic [ref=e509]:
+              - generic [ref=e510]: Timeline
+              - generic [ref=e511]: 74 days left
+            - generic [ref=e519]:
+              - generic [ref=e520]: Hackers
+              - generic [ref=e521]: 490 registered
+            - generic [ref=e527]:
+              - generic [ref=e528]: Format
+              - generic [ref=e529]: Virtual
+          - generic [ref=e530]:
+            - generic [ref=e531]: "#CleanTech"
+            - generic [ref=e532]: "#Satellite Imagery"
+            - generic [ref=e533]: "#IoT"
+            - generic [ref=e534]: "#Optimization"
+          - button "View Details & Tracks" [ref=e535] [cursor=pointer]
+        - generic [ref=e541]:
+          - generic [ref=e542]:
+            - generic [ref=e543]: Starting Soon
+            - generic [ref=e546]: Open Innovation
+          - heading "OmniSpatial XR & Vision Hack" [level=3] [ref=e547]
+          - paragraph [ref=e548]: Spatial audio, mixed reality interfaces, and real-time 3D reconstruction.
+          - generic [ref=e549]:
+            - text: Hosted by
+            - strong [ref=e550]: MetaSpatial Studio & VisionCraft
+          - generic [ref=e551]:
+            - generic [ref=e559]:
+              - generic [ref=e560]: Prize Pool
+              - generic [ref=e561]: $55,000
+            - generic [ref=e566]:
+              - generic [ref=e567]: Timeline
+              - generic [ref=e568]: 88 days left
+            - generic [ref=e576]:
+              - generic [ref=e577]: Hackers
+              - generic [ref=e578]: 530 registered
+            - generic [ref=e584]:
+              - generic [ref=e585]: Format
+              - generic [ref=e586]: Hybrid
+          - generic [ref=e587]:
+            - generic [ref=e588]: "#WebXR"
+            - generic [ref=e589]: "#Three.js"
+            - generic [ref=e590]: "#Spatial AI"
+            - generic [ref=e591]: "#NeRFs"
+          - button "View Details & Tracks" [ref=e592] [cursor=pointer]
+  - contentinfo [ref=e596]:
+    - generic [ref=e597]:
+      - generic [ref=e598]:
+        - generic [ref=e599]:
+          - generic [ref=e600] [cursor=pointer]: HackOrbit
+          - paragraph [ref=e610]: The premier AI hackathon platform connecting visionaries and developers with automated event planning, skill-based team formation, and transparent evaluations.
+          - generic [ref=e611]: Next-Gen Hackathon Operating System
+        - generic [ref=e615]:
+          - heading "Navigation" [level=4] [ref=e616]
+          - generic [ref=e617]:
+            - button "Home" [ref=e618] [cursor=pointer]
+            - button "Explore Hackathons" [ref=e619] [cursor=pointer]
+            - button "Organizer Dashboard" [ref=e620] [cursor=pointer]
+            - button "Participant Dashboard" [ref=e621] [cursor=pointer]
+        - generic [ref=e622]:
+          - heading "Hackathon Domains" [level=4] [ref=e623]
+          - list [ref=e624]:
+            - listitem [ref=e625]: Autonomous AI & Agent Swarms
+            - listitem [ref=e626]: Distributed Cloud & Edge Mesh
+            - listitem [ref=e627]: FinTech & Predictive Markets
+            - listitem [ref=e628]: Generative Biology & Health
+            - listitem [ref=e629]: Climate Intelligence & Energy
+        - generic [ref=e630]:
+          - heading "Platform Standards" [level=4] [ref=e631]
+          - generic [ref=e632]:
+            - generic [ref=e633]: ✓ AI-Powered Operational Scheduling
+            - generic [ref=e634]: ✓ Multi-Dimensional Team Matching
+            - generic [ref=e635]: ✓ Blinded Multi-Tiered Rubric Evaluation
+            - generic [ref=e636]: ✓ Git Cadence & Proof of Authorship
+      - generic [ref=e637]:
+        - generic [ref=e638]: © 2026 HackOrbit. All rights reserved. Built for builders, innovators, and organizers.
+        - generic [ref=e639]:
+          - generic [ref=e640]: Privacy Policy
+          - generic [ref=e641]: Terms of Service
+          - generic [ref=e642]: Security & Integrity
