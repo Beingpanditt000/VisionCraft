@@ -11,7 +11,7 @@ interface AuthContextValue extends AuthState {
   register: (data: RegisterFormData) => Promise<{ success: boolean; error?: string; role?: UserRole }>;
   signIn: (email: string, password: string) => Promise<{ success: boolean; error?: string; role?: UserRole }>;
   signOut: () => Promise<void>;
-  updateUser: (patch: Partial<UserProfile>) => void;
+  updateUser: (patch: Partial<UserProfile>) => void; 
   registerHackathon: (hackathonId: string) => void;
   bookmarkHackathon: (hackathonId: string) => void;
 }
