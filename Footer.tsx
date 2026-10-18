@@ -1,128 +1,215 @@
-
-
 import React from 'react';
-import { Rocket, ShieldCheck, Heart, MessageSquare, Share2, Globe } from 'lucide-react';
-import { PageView } from '../types/hackathon';
+import { OrbitLogoIcon, SparklesIcon } from './Icons';
+import type { DashboardModalType } from '../types';
 
 interface FooterProps {
-  onNavigate: (page: PageView) => void;
+  onNavigateHome: () => void;
+  onNavigateExplore: () => void;
+  onOpenDashboard: (type: DashboardModalType) => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
+export const Footer: React.FC<FooterProps> = ({
+  onNavigateHome,
+  onNavigateExplore,
+  onOpenDashboard,
+}) => {
   return (
-    <footer className="border-t border-white/[0.08] bg-[#06070B] text-slate-400 pt-16 pb-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/[0.06]">
-          
+    <footer
+      style={{
+        borderTop: '1px solid rgba(139, 92, 246, 0.2)',
+        background: 'linear-gradient(180deg, rgba(8, 11, 23, 0.95) 0%, #05070f 100%)',
+        padding: '60px 0 36px',
+        position: 'relative',
+        marginTop: 'auto',
+      }}
+    >
+      <div className="container">
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+            gap: '40px',
+            marginBottom: '48px',
+          }}
+        >
           {/* Brand Info */}
-          <div className="space-y-4 md:col-span-1">
-            <div className="flex items-center space-x-2.5">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-600 to-indigo-600 flex items-center justify-center p-1.5 shadow-md shadow-violet-600/30">
-                <Rocket className="w-4 h-4 text-white" />
+          <div>
+            <div
+              onClick={onNavigateHome}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '10px',
+                cursor: 'pointer',
+                marginBottom: '16px',
+              }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  width: '36px',
+                  height: '36px',
+                  borderRadius: '10px',
+                  background: 'rgba(139, 92, 246, 0.2)',
+                  border: '1px solid rgba(168, 85, 247, 0.4)',
+                }}
+              >
+                <OrbitLogoIcon size={24} />
               </div>
-              <span className="text-lg font-extrabold text-white tracking-tight">HackOrbit <span className="text-violet-400">AI</span></span>
+              <span
+                style={{
+                  fontFamily: 'var(--font-display)',
+                  fontSize: '1.3rem',
+                  fontWeight: 700,
+                  color: '#ffffff',
+                }}
+              >
+                HackOrbit
+              </span>
             </div>
-            <p className="text-xs text-slate-400 leading-relaxed">
-              The next-generation hackathon management platform empowering universities, developer DAOs, and global enterprises to launch world-class builder competitions.
+
+            <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '20px' }}>
+              The premier AI hackathon platform connecting visionaries and developers with automated event planning, skill-based team formation, and transparent evaluations.
             </p>
-            <div className="flex items-center space-x-3 pt-2">
-              <a href="#" className="w-8 h-8 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-slate-400 hover:text-white hover:border-violet-500/50 transition-colors" title="GitHub">
-                <Globe className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-8 h-8 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-slate-400 hover:text-white hover:border-violet-500/50 transition-colors" title="Community">
-                <MessageSquare className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-8 h-8 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-slate-400 hover:text-white hover:border-violet-500/50 transition-colors" title="Share">
-                <Share2 className="w-4 h-4" />
-              </a>
+
+            <div
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                fontSize: '0.78rem',
+                color: 'var(--violet-bright)',
+                background: 'rgba(139, 92, 246, 0.1)',
+                padding: '4px 10px',
+                borderRadius: '6px',
+                border: '1px solid rgba(139, 92, 246, 0.25)',
+              }}
+            >
+              <SparklesIcon size={14} />
+              <span>Next-Gen Hackathon Operating System</span>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Platform Navigation */}
           <div>
-            <h4 className="text-xs font-bold tracking-wider text-white uppercase mb-4">Platform</h4>
-            <ul className="space-y-2.5 text-xs">
-              <li>
-                <button onClick={() => onNavigate('home')} className="hover:text-violet-400 transition-colors">
-                  Overview & Vision
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('hackathons')} className="hover:text-violet-400 transition-colors">
-                  Live Competitions
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('hackathons')} className="hover:text-violet-400 transition-colors">
-                  Prize Pools & Tracks
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('participant')} className="hover:text-violet-400 transition-colors">
-                  Builder Leaderboard
-                </button>
-              </li>
-            </ul>
-          </div>
-
-          {/* For Organizers */}
-          <div>
-            <h4 className="text-xs font-bold tracking-wider text-white uppercase mb-4">Organizers</h4>
-            <ul className="space-y-2.5 text-xs">
-              <li>
-                <button onClick={() => onNavigate('organizer')} className="hover:text-violet-400 transition-colors">
-                  Host an Event
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('organizer')} className="hover:text-violet-400 transition-colors">
-                  Rubric Scoring System
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('organizer')} className="hover:text-violet-400 transition-colors">
-                  Judge Management
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('organizer')} className="hover:text-violet-400 transition-colors">
-                  Enterprise Sponsorships
-                </button>
-              </li>
-            </ul>
-          </div>
-
-          {/* Platform Status & Security */}
-          <div>
-            <h4 className="text-xs font-bold tracking-wider text-white uppercase mb-4">Network Status</h4>
-            <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.06] space-y-2">
-              <div className="flex items-center space-x-2 text-xs text-emerald-400 font-medium">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span>All Systems Operational</span>
-              </div>
-              <p className="text-[11px] text-slate-400">
-                99.98% uptime across worldwide judging compute clusters and submission gateways.
-              </p>
-              <div className="flex items-center space-x-1.5 text-[11px] text-slate-400 pt-1 border-t border-white/[0.05]">
-                <ShieldCheck className="w-3.5 h-3.5 text-violet-400" />
-                <span>Enterprise Grade Security</span>
-              </div>
+            <h4 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#ffffff', marginBottom: '16px' }}>
+              Navigation
+            </h4>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <button
+                onClick={onNavigateHome}
+                style={{
+                  background: 'transparent',
+                  border: 'none',
+                  color: 'var(--text-secondary)',
+                  textAlign: 'left',
+                  cursor: 'pointer',
+                  fontSize: '0.88rem',
+                  padding: 0,
+                  transition: 'color 0.2s',
+                }}
+              >
+                Home
+              </button>
+              <button
+                onClick={onNavigateExplore}
+                style={{
+                  background: 'transparent',
+                  border: 'none',
+                  color: 'var(--text-secondary)',
+                  textAlign: 'left',
+                  cursor: 'pointer',
+                  fontSize: '0.88rem',
+                  padding: 0,
+                  transition: 'color 0.2s',
+                }}
+              >
+                Explore Hackathons
+              </button>
+              <button
+                onClick={() => onOpenDashboard('organizer')}
+                style={{
+                  background: 'transparent',
+                  border: 'none',
+                  color: 'var(--text-secondary)',
+                  textAlign: 'left',
+                  cursor: 'pointer',
+                  fontSize: '0.88rem',
+                  padding: 0,
+                  transition: 'color 0.2s',
+                }}
+              >
+                Organizer Dashboard
+              </button>
+              <button
+                onClick={() => onOpenDashboard('participant')}
+                style={{
+                  background: 'transparent',
+                  border: 'none',
+                  color: 'var(--text-secondary)',
+                  textAlign: 'left',
+                  cursor: 'pointer',
+                  fontSize: '0.88rem',
+                  padding: 0,
+                  transition: 'color 0.2s',
+                }}
+              >
+                Participant Dashboard
+              </button>
             </div>
           </div>
 
+          {/* Popular Categories */}
+          <div>
+            <h4 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#ffffff', marginBottom: '16px' }}>
+              Hackathon Domains
+            </h4>
+            <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
+              <li>Autonomous AI & Agent Swarms</li>
+              <li>Distributed Cloud & Edge Mesh</li>
+              <li>FinTech & Predictive Markets</li>
+              <li>Generative Biology & Health</li>
+              <li>Climate Intelligence & Energy</li>
+            </ul>
+          </div>
+
+          {/* Pillars */}
+          <div>
+            <h4 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#ffffff', marginBottom: '16px' }}>
+              Platform Standards
+            </h4>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.84rem', color: 'var(--text-muted)' }}>
+              <div>✓ AI-Powered Operational Scheduling</div>
+              <div>✓ Multi-Dimensional Team Matching</div>
+              <div>✓ Blinded Multi-Tiered Rubric Evaluation</div>
+              <div>✓ Git Cadence & Proof of Authorship</div>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 space-y-4 sm:space-y-0">
-          <p>© 2026 HackOrbit AI Inc. All rights reserved.</p>
-          <div className="flex items-center space-x-6">
-            <span className="hover:text-slate-300 cursor-pointer">Terms of Service</span>
-            <span className="hover:text-slate-300 cursor-pointer">Privacy Policy</span>
-            <span className="hover:text-slate-300 cursor-pointer">Code of Conduct</span>
+        <div
+          style={{
+            paddingTop: '28px',
+            borderTop: '1px solid rgba(255, 255, 255, 0.06)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '16px',
+            fontSize: '0.82rem',
+            color: 'var(--text-muted)',
+          }}
+        >
+          <div>
+            © 2026 HackOrbit. All rights reserved. Built for builders, innovators, and organizers.
           </div>
-          <div className="flex items-center space-x-1 text-slate-400 text-xs">
-            <span>Crafted for high-velocity builders</span>
-            <Heart className="w-3.5 h-3.5 text-violet-500 fill-violet-500/40 inline mx-0.5" />
+          <div style={{ display: 'flex', gap: '20px' }}>
+            <span>Privacy Policy</span>
+            <span>Terms of Service</span>
+            <span>Security & Integrity</span>
           </div>
         </div>
       </div>
