@@ -10,7 +10,7 @@
       - generic [ref=e31]:
         - generic [ref=e32]: The Next-Generation AI Hackathon Ecosystem
         - heading "Build. Collaborate. Innovate." [level=1] [ref=e35]:
-          - text: Build. Collaborate.
+          - text: Build.  Collaborate.
           - generic [ref=e36]: Innovate.
         - paragraph [ref=e37]: HackOrbit is the premier AI-driven hackathon platform. Match with high-synergy teams, automate complex event planning, and submit to fair, transparent rubric-based evaluation.
         - generic [ref=e38]:
@@ -325,4 +325,4 @@
         - generic [ref=e639]:
           - generic [ref=e640]: Privacy Policy
           - generic [ref=e641]: Terms of Service
-          - generic [ref=e642]: Security & Integrity
+
