@@ -1,4 +1,6 @@
-{ SAMPLE_HACKATHONS } from '../data/hackathons';
+import { useState, useRef, useEffect } from 'react';
+import { CloseIcon, ArrowRightIcon } from './Icons';
+import { SAMPLE_HACKATHONS } from '../data/hackathons';
 
 type Status = 'idle' | 'recording' | 'processing' | 'playing' | 'error';
 
